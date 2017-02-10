@@ -1,3 +1,9 @@
+exports.translate= translate;
+exports.new_translate= new_translate;
+
+
+
+
 function get_numbers (str_array, extract) {
   var numbers_data = {all_numbers:[], currency:""};
 
@@ -57,7 +63,16 @@ function extract_comma_system (number_string) {
 
 
 
+  function new_translate (string) {
 
+    //string = '123.456.789,01'
+
+
+
+    return new_str;
+
+
+  }
 
 
 
@@ -88,10 +103,6 @@ function translate (string) {
 
 
 
-
-
-
-
 function test_numbers () {
 
 
@@ -114,4 +125,4 @@ function test_numbers () {
 }
 
 
-test_numbers()
+//test_numbers()
